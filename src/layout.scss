@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .fill{
     width: 100%;
     height: 100%;
@@ -20,16 +25,18 @@
 }
 
 .horizontal-container  {
+    display: flex;
     & > .right-panel{
-        width: 50%;
+        width: 49.9%;
     }
 
     & > .left-panel{
-        width: 50%;
+        width: 49.9%;
     }
 }
 
 .horizontal-container.fill-right {
+    display: block;
     & > .right-panel{
         float: none;
         width: auto;
@@ -43,6 +50,7 @@
 }
 
 .horizontal-container.fill-left {
+    display: block;
     & > .right-panel{
         width: auto;
         float: right;
@@ -103,6 +111,35 @@
         vertical-align: middle;
     }
 }
-// @for $i from 1 through 50 { 
-//     .margin-left-#{$i} { margin-left: 1px * $i; }
-// }
+
+@for $i from 1 through 20 { 
+    .margin-left-#{$i} { margin-left: 1px * $i; }
+}
+
+@for $i from 1 through 20 { 
+    .margin-top-#{$i} { margin-top: 1px * $i; }
+}
+
+@for $i from 1 through 20 { 
+    .margin-right-#{$i} { margin-right: 1px * $i; }
+}
+
+@for $i from 1 through 20 { 
+    .margin-bottom-#{$i} { margin-bottom: 1px * $i; }
+}
+
+@for $i from 1 through 20 { 
+    .padding-left-#{$i} { padding-left: 1px * $i; }
+}
+
+@for $i from 1 through 20 { 
+    .padding-top-#{$i} { padding-top: 1px * $i; }
+}
+
+@for $i from 1 through 20 { 
+    .padding-right-#{$i} { padding-right: 1px * $i; }
+}
+
+@for $i from 1 through 20 { 
+    .padding-bottom-#{$i} { padding-bottom: 1px * $i; }
+}

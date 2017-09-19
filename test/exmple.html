@@ -1,9 +1,39 @@
 <html>
-
-<head>test css layout</head>
-<link rel="stylesheet" href="dist/layout.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>Title</title>
+<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="../dist/layout.css">
 
 <body>
+    <div class="padding-left-10 padding-top-10 padding-right-10 padding-bottom-10">
+        <div class="panel panel-default">
+            <div class="panel-heading">1. horizontal container</div>
+            <div class="panel-body">
+                <div>
+                    1. 50% width;
+                    <div class="horizontal-container" style="height: 100px;">
+                        <div class="left-panel" style="background: #EE91AD;">
+                            left panel
+                        </div>
+                        <div class="right-panel" style="background: #7171D1;">
+                            right panel
+                        </div>
+                    </div>
+                    2. fill right
+                    <div class="horizontal-container fill-right" style="height: 100px;">
+                        <div class="left-panel fill-height" style="background: #EE91AD; width: 150px;">
+                            left panel (auto)
+                        </div>
+                        <div class="right-panel fill-height" style="background: #7171D1;">
+                            right panel (fill rest)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
