@@ -18,61 +18,56 @@
 .float-left {
   float: left; }
 
-.horizontal-container {
-  display: flex; }
-  .horizontal-container > .right-panel {
-    width: 49.9%; }
-  .horizontal-container > .left-panel {
-    width: 49.9%; }
+.horizontal-container.fill-right > .right-panel {
+  float: none;
+  width: auto;
+  overflow: hidden; }
 
-.horizontal-container.fill-right {
-  display: block; }
-  .horizontal-container.fill-right > .right-panel {
-    float: none;
-    width: auto;
-    overflow: hidden; }
-  .horizontal-container.fill-right > .left-panel {
-    width: auto;
-    float: left; }
+.horizontal-container.fill-right > .left-panel {
+  width: auto;
+  float: left; }
 
-.horizontal-container.fill-left {
-  display: block; }
-  .horizontal-container.fill-left > .right-panel {
-    width: auto;
-    float: right; }
-  .horizontal-container.fill-left > .left-panel {
-    float: none;
-    width: auto;
-    overflow: hidden; }
+.horizontal-container.fill-left > .right-panel {
+  width: auto;
+  float: right; }
 
-.vertical-container.fill-bottom > .top-panel {
-  width: 100%;
-  height: auto; }
+.horizontal-container.fill-left > .left-panel {
+  float: none;
+  width: auto;
+  overflow: hidden; }
 
-.vertical-container.fill-bottom > .bottom-panel {
-  display: table-row;
-  height: 100%; }
-  .vertical-container.fill-bottom > .bottom-panel > .fill-panel {
-    display: table-cell; }
+.vertical-container.fill-bottom {
+  display: table;
+  width: 100%; }
+  .vertical-container.fill-bottom > .top-panel {
+    width: 100%;
+    height: auto; }
+  .vertical-container.fill-bottom > .bottom-panel {
+    display: table-row;
+    height: 100%; }
+    .vertical-container.fill-bottom > .bottom-panel > .fill-panel {
+      display: table-cell; }
 
-.vertical-container.fill-top > .top-panel {
-  display: table-row;
-  height: 100%; }
-  .vertical-container.fill-top > .top-panel > .fill-panel {
-    display: table-cell; }
+.vertical-container.fill-top {
+  display: table;
+  width: 100%; }
+  .vertical-container.fill-top > .top-panel {
+    display: table-row;
+    height: 100%; }
+    .vertical-container.fill-top > .top-panel > .fill-panel {
+      display: table-cell; }
+  .vertical-container.fill-top > .bottom-panel {
+    width: 100%;
+    height: auto; }
 
-.vertical-container.fill-top > .bottom-panel {
-  width: 100%;
-  height: auto; }
-
-.horizontal-center-container {
+.center-container.center-horizontal {
   text-align: center; }
-  .horizontal-center-container > .center-panel {
+  .center-container.center-horizontal > .center-panel {
     display: inline-block; }
 
-.vertical-center-container {
+.center-container.center-vertical {
   display: table; }
-  .vertical-center-container > .center-panel {
+  .center-container.center-vertical > .center-panel {
     display: table-cell;
     vertical-align: middle; }
 

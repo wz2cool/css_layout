@@ -24,19 +24,7 @@
     float: left;
 }
 
-.horizontal-container  {
-    display: flex;
-    & > .right-panel{
-        width: 49.9%;
-    }
-
-    & > .left-panel{
-        width: 49.9%;
-    }
-}
-
 .horizontal-container.fill-right {
-    display: block;
     & > .right-panel{
         float: none;
         width: auto;
@@ -50,7 +38,6 @@
 }
 
 .horizontal-container.fill-left {
-    display: block;
     & > .right-panel{
         width: auto;
         float: right;
@@ -64,6 +51,8 @@
 }
  
 .vertical-container.fill-bottom{
+    display: table;
+    width: 100%;
     & > .top-panel{
         width: 100%;
         height: auto;
@@ -80,6 +69,8 @@
 }
 
 .vertical-container.fill-top{
+    display: table;
+    width: 100%;
     & > .top-panel{
         display: table-row;
         height: 100%;
@@ -95,7 +86,7 @@
     }
 }
 
-.horizontal-center-container{
+.center-container.center-horizontal{
     text-align: center;
 
     & > .center-panel{
@@ -103,7 +94,8 @@
     }
 }
 
-.vertical-center-container{
+
+.center-container.center-vertical{ 
     display: table;
 
     & > .center-panel{
