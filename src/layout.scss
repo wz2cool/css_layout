@@ -1,9 +1,9 @@
-.full{
+.fill{
     width: 100%;
     height: 100%;
 }
 
-.full-height{
+.fill-height{
     height: 100%;
 }
 
@@ -18,3 +18,91 @@
 .float-left{
     float: left;
 }
+
+.horizontal-container  {
+    & > .right-panel{
+        width: 50%;
+    }
+
+    & > .left-panel{
+        width: 50%;
+    }
+}
+
+.horizontal-container.fill-right {
+    & > .right-panel{
+        float: none;
+        width: auto;
+        overflow: hidden;
+    }
+
+    & > .left-panel{
+        width: auto;
+        float: left;
+    }
+}
+
+.horizontal-container.fill-left {
+    & > .right-panel{
+        width: auto;
+        float: right;
+    }
+
+    & > .left-panel{
+        float: none;
+        width: auto;
+        overflow: hidden;
+    }
+}
+ 
+.vertical-container.fill-bottom{
+    & > .top-panel{
+        width: 100%;
+        height: auto;
+    }
+
+    & > .bottom-panel{
+        display: table-row;
+        height: 100%;
+
+        & > .fill-panel{
+            display: table-cell;
+        }
+    }
+}
+
+.vertical-container.fill-top{
+    & > .top-panel{
+        display: table-row;
+        height: 100%;
+
+        & > .fill-panel{
+            display: table-cell;
+        }
+    }
+
+    & > .bottom-panel{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.horizontal-center-container{
+    text-align: center;
+
+    & > .center-panel{
+        display: inline-block;
+    }
+}
+
+.vertical-center-container{
+    display: table;
+
+    & > .center-panel{
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+// @for $i from 1 through 50 { 
+//     .margin-left-#{$i} { margin-left: 1px * $i; }
+// }
