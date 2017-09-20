@@ -4,7 +4,23 @@ CSS Layout 是对上下左右布局的一个简单封装，主要针对自己项
 所以不习惯margin/padding-top/right/bottom/left-*的同学可以忽略。  
 大家可以使用免费cdn 做测试： https://gitcdn.xyz/repo/wz2cool/css_layout/0.1/dist/layout.min.css
 
-## fill right
+## .fill
+填充父节点全部空间。
+
+## .fill-height
+填充父节点高度空间。
+
+## .fill-width
+填充父节点宽度空间。
+
+## .float-right
+向右浮动。
+
+## .float-left
+向左浮动。
+
+## .horizontal-container
+### .fill-right
 ![](https://raw.githubusercontent.com/wz2cool/markdownPhotos/master/res/fill-right.png)
 ```html
 <div class="horizontal-container fill-right" style="height: 100px;">
@@ -17,7 +33,7 @@ CSS Layout 是对上下左右布局的一个简单封装，主要针对自己项
 </div>
 ```
 
-## fill left
+### .fill-left
 ![](https://raw.githubusercontent.com/wz2cool/markdownPhotos/master/res/fill-left.png)
 ```html
 <div class="horizontal-container fill-left" style="height: 100px;">
@@ -30,7 +46,8 @@ CSS Layout 是对上下左右布局的一个简单封装，主要针对自己项
 </div>
 ```
 
-## fill bottom
+## .vertical-container
+### .fill-bottom
 ![](https://raw.githubusercontent.com/wz2cool/markdownPhotos/master/res/fill-bottom.png)
 ```html
 <div class="vertical-container fill-bottom" style="height: 400px;">
@@ -43,7 +60,7 @@ CSS Layout 是对上下左右布局的一个简单封装，主要针对自己项
 </div>
 ```
 
-## fill top
+### .fill-top
 ![](https://raw.githubusercontent.com/wz2cool/markdownPhotos/master/res/fill-top.png)
 ```html
 <div class="vertical-container fill-top" style="height: 400px;">
@@ -89,7 +106,8 @@ CSS Layout 是对上下左右布局的一个简单封装，主要针对自己项
 </div>
 ```
 
-## horizontal center
+## .center-container
+### .center-horizontal
 ![](https://raw.githubusercontent.com/wz2cool/markdownPhotos/master/res/hor-center.png)
 ```html
 <div class="center-container center-horizontal" style="background: #EE91AD; width: 200px; height: 50px">
@@ -99,7 +117,7 @@ CSS Layout 是对上下左右布局的一个简单封装，主要针对自己项
 </div>
 ```
 
-## vertical center
+### .center-vertical
 ![](https://raw.githubusercontent.com/wz2cool/markdownPhotos/master/res/hor-center.png)
 ```html
 <div class="center-container center-vertical" style="background: #EE91AD; width: 200px; height: 50px">
