@@ -29,11 +29,13 @@
         float: none;
         width: auto;
         overflow: hidden;
+        height: 100%;
     }
 
     & > .left-panel{
         width: auto;
         float: left;
+        height: 100%;
     }
 }
 
@@ -41,12 +43,14 @@
     & > .right-panel{
         width: auto;
         float: right;
+        height: 100%;
     }
 
     & > .left-panel{
         float: none;
         width: auto;
         overflow: hidden;
+        height: 100%;
     }
 }
  

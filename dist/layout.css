@@ -21,20 +21,24 @@
 .horizontal-container.fill-right > .right-panel {
   float: none;
   width: auto;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100%; }
 
 .horizontal-container.fill-right > .left-panel {
   width: auto;
-  float: left; }
+  float: left;
+  height: 100%; }
 
 .horizontal-container.fill-left > .right-panel {
   width: auto;
-  float: right; }
+  float: right;
+  height: 100%; }
 
 .horizontal-container.fill-left > .left-panel {
   float: none;
   width: auto;
-  overflow: hidden; }
+  overflow: hidden;
+  height: 100%; }
 
 .vertical-container.fill-bottom {
   display: table;
