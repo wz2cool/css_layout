@@ -5,6 +5,14 @@
 <title>Title</title>
 <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="../dist/layout.css">
+<style type="text/css">
+    .complex .top-panel,
+    .complex .bottom-panel,
+    .complex .left-panel,
+    .complex .right-panel {
+        border: 1px solid black;
+    }
+</style>
 
 <body>
     <div class="padding-left-10 padding-top-10 padding-right-10 padding-bottom-10">
@@ -58,6 +66,41 @@
                 </div>
             </div>
         </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">3. complex hor-ver layout</div>
+            <div class="panel-body complex">
+                <div class="vertical-container fill-bottom" style="height:300px;">
+                    <div class="top-panel">
+                        top (auto)
+                    </div>
+                    <div class="bottom-panel">
+                        <!-- need fill height width -->
+                        <div class="vertical-container fill-top fill">
+                            <div class="top-panel">
+                                <div class="horizontal-container fill-right fill">
+                                    <div class="left-panel fill-height">
+                                        left (auto)
+                                    </div>
+                                    <div class="right-panel fill-height">
+                                        <div class="horizontal-container fill-left fill">
+                                            <div class="right-panel fill-height">
+                                                right(auto)
+                                            </div>
+                                            <div class="left-panel fill-height">
+                                                center
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-panel">
+                                bottom panel (auto)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="panel panel-default">
             <div class="panel-heading">3. center-container</div>
@@ -73,6 +116,17 @@
                     <div class="center-container center-vertical" style="background: #EE91AD; width: 200px; height: 50px">
                         <div class="center-panel">
                             center item
+                        </div>
+                    </div>
+
+                    <h4>3. ver-hor center</h4>
+                    <div class="center-container center-vertical" style="background: #EE91AD; width: 200px; height: 50px">
+                        <div class="center-panel">
+                            <div class="center-container center-horizontal">
+                                <div class="center-panel">
+                                    <span>*</span> center item
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
