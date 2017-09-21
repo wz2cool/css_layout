@@ -109,6 +109,10 @@
 }
 
 @for $i from 1 through 20 { 
+    .margin-#{$i} { margin: 1px * $i; }
+}
+
+@for $i from 1 through 20 { 
     .margin-left-#{$i} { margin-left: 1px * $i; }
 }
 
@@ -122,6 +126,10 @@
 
 @for $i from 1 through 20 { 
     .margin-bottom-#{$i} { margin-bottom: 1px * $i; }
+}
+
+@for $i from 1 through 20 { 
+    .padding-#{$i} { padding: 1px * $i; }
 }
 
 @for $i from 1 through 20 { 
