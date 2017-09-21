@@ -2,7 +2,7 @@
 CSS Layout 是对上下左右布局的一个简单封装，主要针对自己项目里面方便使用。  
 坚持组合大于继承的原则，复杂的布局也是由简单布局组成的。 
 所以不习惯margin/padding-top/right/bottom/left-*的同学可以忽略。  
-大家可以使用免费cdn 做测试： https://gitcdn.xyz/repo/wz2cool/css_layout/0.1/dist/layout.min.css
+大家可以使用免费cdn 做测试： https://gitcdn.xyz/repo/wz2cool/css_layout/0.2/dist/layout.min.css
 
 ## .fill
 填充父节点全部空间。
